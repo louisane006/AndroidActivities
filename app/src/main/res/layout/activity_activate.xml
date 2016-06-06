@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,16 +7,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.malumukendi.assignment6activities.ActivateActivity">
-
-
+    tools:context="com.example.malumukendi.assignment6activities.ActivateActivity"
+    android:background="@drawable/images5">
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
-        android:id="@+id/activate_emailAddress"
+        android:id="@+id/prev_email"
         android:layout_below="@+id/emailAddressLabel"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -28,7 +27,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/activate_password"
+        android:id="@+id/prev_password"
         android:layout_below="@+id/passwordLabel"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -41,7 +40,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Password"
         android:id="@+id/passwordLabel"
-        android:layout_below="@+id/activate_emailAddress"
+        android:layout_below="@+id/prev_email"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -60,37 +59,64 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Activate Account"
-        android:id="@+id/activate_activateButton"
-        android:layout_marginTop="50dp"
-        android:layout_below="@+id/activate_organisationCode"
+        android:text="Create Account"
+        android:id="@+id/prevButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="66dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/activate_Name"
+        android:inputType="text|textCapWords|textNoSuggestions"
+        android:maxLength="3"
+        android:layout_below="@+id/activate_NameLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name"
+        android:id="@+id/activate_NameLabel"
+        android:layout_below="@+id/prev_password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Surname"
+        android:id="@+id/activate_surnameLabel"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/activate_organisationCode"
-        android:inputType="text|textCapWords|textNoSuggestions"
-        android:maxLength="3"
-        android:layout_centerVertical="true"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/prev_surname"
+        android:layout_below="@+id/activate_surnameLabel"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/activate_password"
-        android:layout_alignEnd="@+id/activate_password" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Organisation Code"
-        android:id="@+id/activate_codeLabel"
-        android:layout_above="@+id/activate_organisationCode"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/activate_organisationCode"
-        android:layout_alignEnd="@+id/activate_organisationCode" />
+        android:text="Preview"
+        android:id="@+id/prev_button"
+        android:layout_alignTop="@+id/prevButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
-</LinearLayout>
+</RelativeLayout>

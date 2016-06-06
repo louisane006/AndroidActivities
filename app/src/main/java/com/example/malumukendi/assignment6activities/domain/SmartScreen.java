@@ -3,7 +3,7 @@ package com.example.malumukendi.assignment6activities.domain;
 import java.io.Serializable;
 
 /**
- * Created by louisane Malu on 4/1/2016.
+ * Created by louisane Malu on images4/1/2016.
  */
 
     public class SmartScreen implements Serializable, Parts {

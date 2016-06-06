@@ -5,7 +5,7 @@ import com.example.malumukendi.assignment6activities.domain.Customer;
 import com.example.malumukendi.assignment6activities.domain.Designer;
 
 /**
- * Created by louisane Malu on 4/2/2016.
+ * Created by louisane Malu on images4/images2/2016.
  */
 public class BrochureFactory {
     public static Brochure brochure(Customer cust, String d, String n, double p, Designer des) {

@@ -9,7 +9,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
- * Created by louisane Malu on 4/23/2016.
+ * Created by louisane Malu on images4/23/2016.
  */
 public class BrandFactoryTest {
     Brand frame;

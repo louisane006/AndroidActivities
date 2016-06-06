@@ -13,7 +13,7 @@ import org.junit.Test;
 import java.util.List;
 
 /**
- * Created by louisane Malu on 4/2/2016.
+ * Created by louisane Malu on images4/images2/2016.
  */
 public class ShopFactoryTest {
     Shop shop;

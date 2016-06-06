@@ -17,7 +17,7 @@ import java.util.Set;
 
 
 /**
- * Created by louisane Malu on 4/23/2016.
+ * Created by louisane Malu on images4/23/2016.
  */
 public class BrandRepoImpl extends SQLiteOpenHelper implements BrandRepo {
 
@@ -136,6 +136,12 @@ public class BrandRepoImpl extends SQLiteOpenHelper implements BrandRepo {
         close();
         return rowsDeleted;
     }
+
+    @Override
+    public boolean insertData(String email, String password, String name, String surname) {
+        return false;
+    }
+
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(DATABASE_CREATE);

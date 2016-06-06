@@ -4,7 +4,7 @@ import com.example.malumukendi.assignment6activities.domain.Cashier;
 import com.example.malumukendi.assignment6activities.domain.Invoice;
 
 /**
- * Created by louisane Malu on 4/2/2016.
+ * Created by louisane Malu on images4/images2/2016.
  */
 public class InvoiceFactory {
     public static Invoice inv( int n, Cashier c) {

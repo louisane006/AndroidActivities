@@ -10,7 +10,7 @@ import java.util.Date;
 import java.util.Map;
 
 /**
- * Created by louisane Malu on 4/27/2016.
+ * Created by louisane Malu on images4/27/2016.
  */
 public class AppUtil {
     public static String getStringLocation(Map<String, String> location) {

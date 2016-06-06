@@ -31,13 +31,13 @@ public class BrandServiceImpl extends Service implements BrandService {
         return service;
     }
     @Override
-    public boolean duplicateCheck(String title) {
+    public boolean duplicateCheck(String description) {
         Set<Brand> brands;
         brands =   repo.findAll();
 
         for (Brand brand : brands)
         {
-            if (brand.getDescription().trim().equalsIgnoreCase(title))
+            if (brand.getDescription().trim().equalsIgnoreCase(description))
                 return true;
 
         }
@@ -48,10 +48,10 @@ public class BrandServiceImpl extends Service implements BrandService {
         // TODO: Return the communication channel to the service.
         return localBinder;
     }
-
     public class BookServiceLocalBinder extends Binder {
         public BrandServiceImpl getService() {
             return BrandServiceImpl.this;
         }
     }
+
 }

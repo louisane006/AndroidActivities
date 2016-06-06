@@ -16,7 +16,7 @@ import java.util.Set;
 
 
 /**
- * Created by louisane Malu on 4/20/2016.
+ * Created by louisane Malu on images4/20/2016.
  */
 public class CreditRepoImpl extends SQLiteOpenHelper implements CreditRepo {
 
@@ -134,6 +134,11 @@ public class CreditRepoImpl extends SQLiteOpenHelper implements CreditRepo {
         int rowsDeleted = db.delete(TABLE_NAME,null,null);
         close();
         return rowsDeleted;
+    }
+
+    @Override
+    public boolean insertData(String email, String password, String name, String surname) {
+        return false;
     }
 
     @Override

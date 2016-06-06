@@ -11,7 +11,7 @@ import com.android.volley.toolbox.Volley;
 import com.example.malumukendi.assignment6activities.conf.databases.GraphicBitmapCache;
 
 /**
- * Created by louisane Malu on 4/27/2016.
+ * Created by louisane Malu on images4/27/2016.
  */
 public class App extends Application {
 

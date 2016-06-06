@@ -15,7 +15,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Created by louisane Malu on 4/21/2016.
+ * Created by louisane Malu on images4/21/2016.
  */
 public class SmartScreenRepoImpl extends SQLiteOpenHelper implements SmartScreenRepo {
 
@@ -144,6 +144,11 @@ public class SmartScreenRepoImpl extends SQLiteOpenHelper implements SmartScreen
         int rowsDeleted = db.delete(TABLE_NAME, null, null);
         close();
         return rowsDeleted;
+    }
+
+    @Override
+    public boolean insertData(String email, String password, String name, String surname) {
+        return false;
     }
 
     @Override

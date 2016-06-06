@@ -5,7 +5,7 @@ import com.example.malumukendi.assignment6activities.domain.Customer;
 import com.example.malumukendi.assignment6activities.domain.Designer;
 
 /**
- * Created by louisane Malu on 4/2/2016.
+ * Created by louisane Malu on images4/images2/2016.
  */
 public class BrandFactory {
     public static Brand brand(Customer cust, String d, double p, Designer des) {

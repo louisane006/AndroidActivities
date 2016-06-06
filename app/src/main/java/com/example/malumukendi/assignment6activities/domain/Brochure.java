@@ -6,7 +6,7 @@ import android.os.IBinder;
 import java.io.Serializable;
 
 /**
- * Created by louisane Malu on 3/29/2016.
+ * Created by louisane Malu on images3/29/2016.
  */
 public abstract class Brochure implements Serializable, Task{
     private Designer designer;

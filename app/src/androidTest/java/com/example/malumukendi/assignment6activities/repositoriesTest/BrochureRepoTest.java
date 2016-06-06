@@ -13,7 +13,7 @@ import junit.framework.Assert;
 import java.util.Set;
 
 /**
- * Created by louisane Malu on 4/2/2016.
+ * Created by louisane Malu on images4/images2/2016.
  */
 public class BrochureRepoTest extends AndroidTestCase {
     private static final String TAG="SETTINGS TEST";
